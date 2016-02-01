@@ -53,7 +53,7 @@
     NSFetchRequest *request = [[NSFetchRequest
                                 alloc]initWithEntityName:@"ShoppingItem"];
     NSPredicate *predicate = [NSPredicate
-                              predicateWithFormat:@"itemName = %@", name];
+                              predicateWithFormat:@"itemName CONTAINS %@", name];
     request.predicate = predicate;
     NSError *error;
     NSArray *results = [self.context executeFetchRequest:request
