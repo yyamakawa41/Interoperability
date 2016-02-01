@@ -17,6 +17,10 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var searchTextField: UITextField!
     
     @IBAction func searchButtonTouched(sender: AnyObject) {
+        DataManager.sharedManager().getShoppingItemWithName(self.searchTextField.text, completed: {(returnedItem: ShoppingItem!, error: NSError!) in Void()
+            self.items = [returnedItem]
+            self.tableView.reloadData()
+        })
     }
     
     @IBAction func populateButtonTouched(sender: AnyObject) {
