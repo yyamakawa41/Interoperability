@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -47,6 +47,13 @@
                                 <rect key="frame" x="20" y="50" width="560" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-jv-a3h">
+                                <rect key="frame" x="522" y="565" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMS-Tn-UQI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -55,6 +62,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="WZQ-1L-aBY" secondAttribute="trailing" constant="5" id="4KF-hl-AcM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n0b-bV-QTI" secondAttribute="trailing" constant="300" id="A7j-kK-9IY"/>
                             <constraint firstItem="n0b-bV-QTI" firstAttribute="leading" secondItem="9fJ-Pc-H7f" secondAttribute="trailing" constant="5" id="B1m-sY-DTZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tUp-jv-a3h" secondAttribute="bottom" constant="5" id="DqO-3E-Vge"/>
                             <constraint firstAttribute="trailingMargin" secondItem="swa-aa-VZR" secondAttribute="trailing" id="Fwd-ya-EJ1"/>
                             <constraint firstItem="swa-aa-VZR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="50" id="KAP-6o-CUQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9fJ-Pc-H7f" secondAttribute="trailing" constant="350" id="WfB-Fk-UrE"/>
@@ -66,6 +74,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="swa-aa-VZR" secondAttribute="trailing" constant="160" id="f4F-Gg-Cz2"/>
                             <constraint firstItem="WZQ-1L-aBY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="iLZ-97-EHu"/>
                             <constraint firstItem="swa-aa-VZR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kGK-BJ-AH1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tUp-jv-a3h" secondAttribute="trailing" constant="5" id="lpG-32-HJj"/>
                             <constraint firstItem="swa-aa-VZR" firstAttribute="top" secondItem="WZQ-1L-aBY" secondAttribute="bottom" constant="181" id="nUf-pN-hYG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="swa-aa-VZR" secondAttribute="bottom" constant="45" id="npo-gD-KuZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9fJ-Pc-H7f" secondAttribute="bottom" constant="5" id="wX1-Xi-bjD"/>
